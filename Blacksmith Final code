@@ -6,43 +6,43 @@
 -- All cobblestone items = 15$ each
 -- All wooden items- = 5$ each 
 -- Welcome, the following will be my submission for term 3, and I veru much ope that it works...
-B == "minecraft:diamond"
-C == "minecraft:gold_ingot"
-D == "minecraft:iron_ingot"
--- The above shall be the only legitamate means to purchase the items of yourchosing and below, i will showhow much each one is worth.
-local B = 50
-local C = 35
-local D = 15
+B = "minecraft:diamond"
+C = "minecraft:gold_ingot"
+D = "minecraft:iron_ingot"
+-- The above shall be the only legitamate means to purchase the items of your chosing and below, I will showhow much each one is worth.
+b = 50
+c = 35
+d = 15
 -- Now, i will begin with the code which will permit the user to give an currency to the turtle and receive an item back.
-local function Diamond_process()
+function Diamond_process()
 -- in this function, you will be permitted to purchase any of the diamond items, for they are all worth the same...
-turtle.getSelectedSlot(5)
-if turtle.getItemSpace([5]) = local B then
-turtle.say( "Ah, you have exact change... are you sure that this is the item that you'd like?")
-turtle.select(1)
-turtle.drop() 
-elseif turtle.say( "sorry pal, but it seems like you don't have a sufficient amount of funds." )
-end
+  turtle.getSelectedSlot(5)
+    if turtle.getItemSpace([5]) = b then
+      turtle.say( "Ah, you have exact change... are you sure that this is the item that you'd like?")
+      turtle.select(1)
+      turtle.drop() 
+    elseif turtle.say( "sorry pal, but it seems like you don't have a sufficient amount of funds." )
+   end
 end
 -- Next, i'm hoping to repeat the same process but with Gold, and Iron ingots. 
-local function Gold_process()
-turtle.getSelectedSlot(5)
-if turtle.getItemSpace([5]) = local C then 
-turtle.say( "Ah, you have exact change... are you sure that this  is te item that you' like?" )
-turtle.select(2)
-turtle.drop()
-elseif turtle.say( "I apologize to be the bearer of bad news but it seems like you do not have the sufficient amount of funds to purchase this item" )
-end
+function Gold_process()
+  turtle.getSelectedSlot(5)
+    if turtle.getItemSpace([5]) = c then 
+     turtle.say( "Ah, you have exact change... are you sure that this  is te item that you' like?" )
+     turtle.select(2)
+      turtle.drop()
+    elseif turtle.say( "I apologize to be the bearer of bad news but it seems like you do not have the sufficient amount of funds to purchase this item" )
+  end
 end
 -- And now, last but not least, Iron...
-local function Iron_process()
-turtle.getSelectedSlot(5)
-if turtle.getItemSpace([5]) = local D then
-turtle.say( "Ah why thank you for your patrionage, is that everything and are you sure that the selected item is in fact the one you'd like?" )
-then turtle.select(3)
-and turtle.drop()
-elseif turtle.say( "I apologize but you do not have the correct amunt of funds for this item...." ) 
-end
+function Iron_process()
+  turtle.getSelectedSlot(5)
+    if turtle.getItemSpace([5]) = d then
+     turtle.say( "Ah why thank you for your patrionage, is that everything and are you sure that the selected item is in fact the one you'd like?" )
+      then turtle.select(3)
+      turtle.drop()
+    elseif turtle.say( "I apologize but you do not have the correct amunt of funds for this item...." ) 
+   end
 end 
 
 Diaond_process()
