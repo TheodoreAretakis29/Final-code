@@ -18,30 +18,30 @@ function Diamond_process()
 -- in this function, you will be permitted to purchase any of the diamond items, for they are all worth the same...
   turtle.getSelectedSlot(5)
     if turtle.getItemSpace([5]) = b then
-      turtle.say( "Ah, you have exact change... are you sure that this is the item that you'd like?")
+      print("Ah, you have exact change... are you sure that this is the item that you'd like?")
       turtle.select(1)
       turtle.drop() 
-    elseif turtle.say( "sorry pal, but it seems like you don't have a sufficient amount of funds." )
+    elseif print("sorry pal, but it seems like you don't have a sufficient amount of funds.")
    end
 end
 -- Next, i'm hoping to repeat the same process but with Gold, and Iron ingots. 
 function Gold_process()
   turtle.getSelectedSlot(5)
     if turtle.getItemSpace([5]) = c then 
-     turtle.say( "Ah, you have exact change... are you sure that this  is te item that you' like?" )
+     print("Ah, you have exact change... are you sure that this  is te item that you' like?")
      turtle.select(2)
-      turtle.drop()
-    elseif turtle.say( "I apologize to be the bearer of bad news but it seems like you do not have the sufficient amount of funds to purchase this item" )
+     turtle.drop()
+    elseif print("I apologize to be the bearer of bad news but it seems like you do not have the sufficient amount of funds to purchase this item")
   end
 end
 -- And now, last but not least, Iron...
 function Iron_process()
   turtle.getSelectedSlot(5)
     if turtle.getItemSpace([5]) = d then
-     turtle.say( "Ah why thank you for your patrionage, is that everything and are you sure that the selected item is in fact the one you'd like?" )
+      print("Ah why thank you for your patrionage, is that everything and are you sure that the selected item is in fact the one you'd like?" )
       then turtle.select(3)
       turtle.drop()
-    elseif turtle.say( "I apologize but you do not have the correct amunt of funds for this item...." ) 
+    elseif print( "I apologize but you do not have the correct amunt of funds for this item...." ) 
    end
 end 
 
