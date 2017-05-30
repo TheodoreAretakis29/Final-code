@@ -1,10 +1,10 @@
--- The Final-code
+-- The Final-code-- The Final-code
 -- Table of contents:
 -- All diamond items = 50$ each
 -- All Gold items = 35$ each
 -- All iron items = 20% each
 -- All cobblestone items = 15$ each
--- All wooden items- = 5$ each 
+-- All wooden items- = 5$ each
 -- Welcome, the following will be my submission for term 3, and I veru much ope that it works...
 B = "minecraft:diamond"
 C = "minecraft:gold_ingot"
@@ -17,17 +17,17 @@ d = 15
 function Diamond_process()
 -- in this function, you will be permitted to purchase any of the diamond items, for they are all worth the same...
   turtle.getSelectedSlot(5)
-    if turtle.getItemSpace([5]) = b then
+    if turtle.getItemSpace(5) = b then
       print("Ah, you have exact change... are you sure that this is the item that you'd like?")
       turtle.select(1)
-      turtle.drop() 
+      turtle.drop()
     elseif print("sorry pal, but it seems like you don't have a sufficient amount of funds.")
    end
 end
--- Next, i'm hoping to repeat the same process but with Gold, and Iron ingots. 
+-- Next, i'm hoping to repeat the same process but with Gold, and Iron ingots.
 function Gold_process()
   turtle.getSelectedSlot(5)
-    if turtle.getItemSpace([5]) = c then 
+    if turtle.getItemSpace(5) = c then
      print("Ah, you have exact change... are you sure that this  is te item that you' like?")
      turtle.select(2)
      turtle.drop()
@@ -37,14 +37,16 @@ end
 -- And now, last but not least, Iron...
 function Iron_process()
   turtle.getSelectedSlot(5)
-    if turtle.getItemSpace([5]) = d then
+    if turtle.getItemSpace(5) = d then
       print("Ah why thank you for your patrionage, is that everything and are you sure that the selected item is in fact the one you'd like?" )
       then turtle.select(3)
       turtle.drop()
-    elseif print( "I apologize but you do not have the correct amunt of funds for this item...." ) 
-   end
-end 
-
+      elseif print( "I apologize but you do not have the correct amunt of funds for this item...." )
+     end
+    end
+ 
 Diaond_process()
 Gold_process()
 Iron_process()
+
+
