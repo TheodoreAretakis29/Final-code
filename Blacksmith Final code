@@ -54,6 +54,7 @@ turtleselect(7)
       print("Ah why thank you for your patrionage, is that everything and are you sure that the selected item is in fact the one you'd like?" )
       then turtle.select(3)
       turtle.drop()
+      --The iron item of your choice will be held in slot 3, if you have enough currency, the turtle will give you the item and if not you shall receive the message of rejection. 
       elseif print( "I apologize but you do not have the correct amunt of funds for this item...." )
      end
     end
