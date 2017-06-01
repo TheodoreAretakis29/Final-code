@@ -13,31 +13,44 @@ D = "minecraft:iron_ingot"
 b = 50
 c = 35
 d = 15
+-- If you'd like to purcahse diamond items, please pay with slot 5, gold for slot 6 and to pay for iron use slot 7
 -- Now, i will begin with the code which will permit the user to give an currency to the turtle and receive an item back.
 function Diamond_process()
 -- in this function, you will be permitted to purchase any of the diamond items, for they are all worth the same...
-  turtle.getSelectedSlot(5)
+turtle.select(5)
+-- The above will select the slot in which people will be inserting their currency.
+turtle.getSelectedSlot(5)
     if turtle.getItemSpace(5) = b then
+    -- The above two will check to make sure that the slot is good and will count the amount of itmes in the selected slot. 
       print("Ah, you have exact change... are you sure that this is the item that you'd like?")
       turtle.select(1)
       turtle.drop()
     elseif print("sorry pal, but it seems like you don't have a sufficient amount of funds.")
-   end
+  -- After the identification, the turtle will print the message above, AND GIVE THE ITEM...
+  -- Otherwise, it'll tell you that you will not be able to purchase the item.
+  end
 end
 -- Next, i'm hoping to repeat the same process but with Gold, and Iron ingots.
 function Gold_process()
-  turtle.getSelectedSlot(5)
-    if turtle.getItemSpace(5) = c then
+turtle.select(6) 
+-- This code will do the same as previously done... 
+  turtle.getSelectedSlot(6)
+    if turtle.getItemSpace(6) = c then
      print("Ah, you have exact change... are you sure that this  is te item that you' like?")
      turtle.select(2)
      turtle.drop()
-    elseif print("I apologize to be the bearer of bad news but it seems like you do not have the sufficient amount of funds to purchase this item")
+  --Like before, the code will identify the slot, check the amount of items are in that slot, to see if the user has put the correct amount of cvurrency
+  -- Afterards, the turtle will print the message, and see whether or not  the user has put a sufficient qamount of funds. 
+  --If not, then the mesaage below will be printed.
+  elseif print("I apologize to be the bearer of bad news but it seems like you do not have the sufficient amount of funds to purchase this item")
   end
 end
 -- And now, last but not least, Iron...
 function Iron_process()
-  turtle.getSelectedSlot(5)
-    if turtle.getItemSpace(5) = d then
+turtleselect(7)
+--As previously done, this code is going to select, identify, and count items in the slot as well as the slot itself. 
+  turtle.getSelectedSlot(7)
+    if turtle.getItemSpace(7) = d then
       print("Ah why thank you for your patrionage, is that everything and are you sure that the selected item is in fact the one you'd like?" )
       then turtle.select(3)
       turtle.drop()
